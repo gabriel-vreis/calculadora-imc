@@ -111,7 +111,7 @@ body {
 }
 
 #calculate:hover {
-    background-color: #ff8400ce;
+    background-color: #ff911c;
 }
 
 #result {
@@ -158,4 +158,20 @@ body {
     i {
         color: #c9c9c9;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.normal {
+    color: #16a34a;
+}
+
+.more-attention {
+    color: #dc2626;
+}
+
+.attention {
+    color: #ffd54a;
 }
