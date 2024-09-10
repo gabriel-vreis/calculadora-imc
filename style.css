@@ -110,6 +110,10 @@ body {
     cursor: pointer;
 }
 
+#calculate:hover {
+    background-color: #ff8400ce;
+}
+
 #result {
     display: flex;
     gap: 2rem;
@@ -139,15 +143,19 @@ body {
     padding-top: 1.5rem;
 }
 
-#more-info a {
+#more-info a,i {
     color: #ff8500;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
     font-size: 0.825rem;
+    transition: 0.3s;
 }
 
 #more-info a:hover {
     color: #c9c9c9;
+    i {
+        color: #c9c9c9;
+    }
 }
