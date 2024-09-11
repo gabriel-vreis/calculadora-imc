@@ -134,8 +134,8 @@ body {
     color: #c9c9c9;
 }
 
-#description {
-    width: 15.5rem;
+#description-content {
+    width: 17rem;
 }
 
 #more-info {
@@ -174,4 +174,23 @@ body {
 
 .attention {
     color: #ffd54a;
+}
+
+@media screen and (max-width: 1024px) {
+    #img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+    #calculator {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        justify-content: center;
+    }
 }
