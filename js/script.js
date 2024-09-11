@@ -1,6 +1,6 @@
-import {bmiDescription, valueColor} from "./module.js";
+import {bmiDescription, valueColor} from "./module.js"; //ES6 Modules
 
-const form = document.querySelector('#form');
+const form = document.querySelector('#form'); //Var, let e const 
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();

@@ -1,6 +1,6 @@
-export const bmiDescription = (bmi) => { 
+export const bmiDescription = (bmi) => { // Operador Ternário e Template Literals 
     return bmi < 18.5
-    ? `Cuidado! Seu IMC é ${bmi.replace('.', ',')}, indicando que você está abaixo do peso!`
+    ? `Cuidado! Seu IMC é ${bmi.replace('.', ',')}, indicando que você está abaixo do peso!` 
     : bmi >= 18.5 && bmi <= 25
     ? `Seu IMC é ${bmi.replace('.', ',')}, Você está no peso ideal!`
     : bmi > 25 && bmi <= 30
@@ -9,10 +9,10 @@ export const bmiDescription = (bmi) => {
     ? `Cuidado! Seu IMC é ${bmi.replace('.', ',')}, indicando obesidade moderada!`
     : bmi > 35 && bmi <= 40
     ? `Cuidado! Seu IMC é ${bmi.replace('.', ',')}, indicando obesidade severa!`
-    : `Cuidado! Seu IMC é ${bmi.replace('.', ',')}, indicando obesidade mórbida!`;
+    : `Cuidado! Seu IMC é ${bmi.replace('.', ',')}, indicando obesidade mórbida!`; 
 };
 
-export const valueColor = (bmi, value) => { 
+export const valueColor = (bmi, value) => { //Spread Operator
     return bmi < 18.5
     ? (value.classList.remove (...value.classList), value.classList.add ('attention'))
     : bmi >= 18.5 && bmi <= 25
@@ -23,5 +23,5 @@ export const valueColor = (bmi, value) => {
     ? (value.classList.remove (...value.classList), value.classList.add ('attention'))
     : bmi > 35 && bmi <= 40
     ? (value.classList.remove (...value.classList), value.classList.add ('more-attention'))
-    : (value.classList.remove (...value.classList), value.classList.add ('more-attention'));
-};
+    : (value.classList.remove (...value.classList), value.classList.add ('more-attention')); 
+}
